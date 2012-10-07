@@ -26,8 +26,7 @@
 
 # Model variant (DEFY_FROYO, DEFY_PLUS)
 BOARD_DEFY_MODEL := DEFY_PLUS
-BOARD_USE_CID_ROTATE_34 := true
-TARGET_USE_JORDAN_COMMON := true
+TARGET_SPECIFIC_HEADER_PATH := device/motorola/jordan_plus/include
 TARGET_CUSTOM_RELEASETOOL := ./device/motorola/jordan_plus/releasetools/squisher
 
 include device/motorola/jordan-common/BoardConfigCommon.mk
