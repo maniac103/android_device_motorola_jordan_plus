@@ -35,11 +35,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
 	device/motorola/jordan_plus/media_profiles.xml:system/etc/media_profiles.xml
 
-# copy all vendor (motorola) kernel modules to system/lib/modules
-PRODUCT_COPY_FILES += $(shell test -d vendor/motorola/jordan_plus/lib/modules &&  \
-	find vendor/motorola/jordan_plus/lib/modules -name '*.ko' \
-	-printf '%p:system/lib/modules/%f ')
-
 # List of files to keep against rom upgrade (baseband config, overclock settings)
 ifdef CYANOGEN_RELEASE
     PRODUCT_COPY_FILES += device/motorola/jordan_plus/releasetools/custom_backup_release.txt:system/etc/custom_backup_list.txt

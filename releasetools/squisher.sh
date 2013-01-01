@@ -45,3 +45,7 @@ fi
 cp -f $DEVICE_OUT/root/init $REPACK/ota/system/bootmenu/2nd-init/init
 cp -f $DEVICE_OUT/root/init.rc $REPACK/ota/system/bootmenu/2nd-init/init.rc
 
+# Copy kernel & ramdisk
+cp -f $DEVICE_OUT/kernel $REPACK/ota/system/bootmenu/2nd-boot/kernel
+cp -f $DEVICE_OUT/ramdisk.img $REPACK/ota/system/bootmenu/2nd-boot/ramdisk
+
